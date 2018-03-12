@@ -1,0 +1,45 @@
+<h2 align=center>Arrays by me</h2>
+First button sets and shows the myStuff array.
+Second button sets and shows the myRandom arrray.<br>
+
+<input type=button value="Run myStuff" onclick="
+ //alert(   Math.floor(Math.random()*9+1)   )
+
+ myStuff = new Array()
+ myStuff[0] = 'Cell Phone'
+ myStuff[1] = 'Shoes'
+ myStuff[2] = 'Bag'
+ myStuff[3] = 'Binder'
+ myStuff[4] = 'Pencil'
+ myStuff[5] = 'Eraser'
+ myStuff[6] = 'Textbook'
+ 
+  for (myLoop=0; myLoop <= 7; myLoop++ ){
+document.getElementById('myDiv01').innerHTML += myStuff[myLoop] + ' <br>'
+   }
+"><br><br>
+
+<div id="myDiv01"></div>
+
+Loop this amount:<input type=text id="myText01" size=6 value= 5><br>
+<input type=button value="Run myRandom" onclick="
+ 
+ myRandomNumber = new Array()
+
+ myRandomNumber[0] = Math.floor(Math.random()*9+1)
+
+document.getElementById('myDiv02').innerHTML += myRandomNumber[0] + ' 
+
+ myRandomNumber[1] = Math.floor(Math.random()*9+1)
+ myRandomNumber[2] = Math.floor(Math.random()*9+1)
+ myRandomNumber[3] = Math.floor(Math.random()*9+1)
+ myRandomNumber[4] = Math.floor(Math.random()*9+1)
+ myRandomNumber[5] = Math.floor(Math.random()*9+1)
+ myRandomNumber[6] = Math.floor(Math.random()*9+1)
+
+
+"><br>
+
+
+<div id="myDiv02"></div>
+
