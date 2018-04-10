@@ -1,0 +1,55 @@
+<script>
+
+class myAnimal {
+  constructor(passName, passAge)  {
+      this.myName = passName;
+      this.myAge = passAge;
+      
+ }
+ 
+ myShow(){
+    document.getElementById('myDiv01').innerHTML += 'Hello '+ this.myName + ',<br>' + 'who\'s a good boy?' + '<br>' + this.myAge + '.<br>'
+ }
+
+}
+
+</script>
+
+<input type=button value="Activate Dog" onclick="{
+
+   myDog = new myAnimal('Tadakichi', 'Tadakichi is 5, <br> and is a Great Pyrenees')
+   myDog.myShow()
+
+}">
+
+
+<input type=button value="Activate Cat" onclick="{
+
+  myCat = new myAnimal('Sakamoto', 'Sakamoto is 7, <br> and is a Bombay Cat')
+  myCat.myShow()
+
+}">
+
+<input type=button value="Run myPets" onclick="
+ //alert(   Math.floor(Math.random()*9+1)   )
+
+ myPets = new Array()
+ myPets[0] = 'Tadakichi(Great Pyrenees)'
+ myPets[1] = 'Sakamoto(Bombay Cat)'
+ myPets[2] = 'Danny(Harlequin Great Dane)'
+ myPets[3] = 'Shamisen(Calico Cat)'
+ myPets[4] = 'Cherry(Siberian Husky)'
+ myPets[5] = 'Hayate(Shiba Inu)'
+ myPets[6] = 'Alexander(Great Pyrenees)'
+ myPets[7] = 'Iggy(Boston Terrier)'
+ myPets[8] = 'Kars(Labrador Retriever)' 
+ myPets[9] = 'Happy(Russian Blue Cat)'
+  for (myLoop=0; myLoop <= 7; myLoop++ ){
+document.getElementById('myDiv01').innerHTML += myPets[myLoop] + ' <br>'
+   }
+"><br><br>
+
+
+<div id="myDiv01"><br></div><br>
+
+Add to the class constructor the animal type, pass it, fix myShow to show all three properties, then add the cat button and then try to add an Array of animals
