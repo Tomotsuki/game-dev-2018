@@ -4,6 +4,6 @@ My game development marking page
 
 
 
-https://crunks-tomo.github.io/game-dev-2018/
+https://tomotsuki.github.io/game-dev-2018/
 
 
